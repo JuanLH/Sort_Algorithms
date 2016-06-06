@@ -6,15 +6,15 @@
 package DrawAlgoriths;
 
 import Utilities.Enumerators;
-import Utilities.Enumerators.Order;
 import Utilities.Sort;
-import java.lang.System;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
+
 
 /**
  *
  * @author juanlht
+ * @Description This class extends sort which implements Runnable and must
+ * implement the method run
  */
 public class QuickSort extends Sort{
 
@@ -59,12 +59,12 @@ public class QuickSort extends Sort{
         
     }
     
-
+    /*Sort class' Method implemented*/
     @Override
     public void OrganizeArray() {
         recursiveQuickSort(0, array.length-1);
     }
-
+    /*Runnable Class' method implemented*/
     @Override
     public void run() {
        

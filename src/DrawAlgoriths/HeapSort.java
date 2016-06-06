@@ -7,12 +7,13 @@ package DrawAlgoriths;
 
 import Utilities.Enumerators;
 import Utilities.Sort;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 /**
  *
  * @author juanlht
+ * @Description This class extends sort which implements Runnable and must
+ * implement the method run
  */
 public class HeapSort extends Sort {
 
@@ -56,11 +57,12 @@ public class HeapSort extends Sort {
         }
     }
 
+    /*Sort class' Method implemented*/
     @Override
     public void OrganizeArray() {
         sort();
     }
-
+    /*Runnable Class' method implemented*/
     @Override
     public void run() {
         

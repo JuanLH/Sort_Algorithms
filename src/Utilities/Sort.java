@@ -7,6 +7,11 @@ import Utilities.Enumerators.Order;
 
 /**
  * @author JuanLH
+ * @Description: this is not a completely abstract class but has 
+ * unimplemented methods, which is the OrganizeArray (), 
+ * This class is made for the purpose of being inherited.
+ * 
+ * @Runable is an interface for implement Threads
  */
 
 
@@ -14,23 +19,15 @@ import Utilities.Enumerators.Order;
 public abstract  class  Sort implements Runnable{
     
     protected  int array[];
-    private Order orden;
+    protected Order order;
     
-   
-    public Sort(int[] array,Order orden) {
-        this.array = array;
-        this.orden = orden;
-        
-    }
-
-    public Order getOrden() {
-        return orden;
-    }
-
-    public int[] getArray() {
-        return array;
+   //Constructor method 
+    public Sort(int[] array,Order order) {
+        this.array = array;//put the array here
+        this.order = order;//put a enum of type Order here
     }
     
+    //This method is capable of printing the array
     public void PrintArray(){
         for(int x=0 ; x<=array.length-1; x++){
             if(x==0)
@@ -43,13 +40,15 @@ public abstract  class  Sort implements Runnable{
         }
     }
     
+    //This method swap/exchanges 2 elements in the array
     public void Swap(int posA,int posB){
         int temp = array[posA];
         array[posA]=array[posB];
         array[posB]=temp;
     }
-
-    public abstract void  OrganizeArray(); //Organize array in order 
+    
+    //Implement this method to sort the array
+    public abstract void  OrganizeArray(); 
     
     
 }
