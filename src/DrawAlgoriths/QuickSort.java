@@ -30,10 +30,12 @@ public class QuickSort extends Sort{
         int j= right;
         
         while(i<j){
+            
             while(array[i]<= pivot && i<j)
                 i++;
-            while(array[j]>pivot)
+            while(array[j]>pivot && j>0)
                 j--;
+            
             
                 if(i<j){
                     super.Swap(i, j);
@@ -67,7 +69,7 @@ public class QuickSort extends Sort{
     public void run() {
        
         OrganizeArray();
-        System.out.println("XXX QuickSort");
+        
         
         
     }

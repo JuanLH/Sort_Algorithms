@@ -65,7 +65,7 @@ public class HeapSort extends Sort {
     public void run() {
         
         OrganizeArray();
-        System.out.println("!!! HeapSort");
+        
        
         
     }
