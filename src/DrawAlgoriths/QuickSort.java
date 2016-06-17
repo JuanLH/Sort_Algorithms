@@ -18,8 +18,8 @@ import Utilities.Sort;
  */
 public class QuickSort extends Sort{
 
-    public QuickSort(int[] array, Enumerators.Order orden) {
-        super(array, orden);
+    public QuickSort(int[] array) {
+        super(array);
         
     }
     
@@ -69,7 +69,7 @@ public class QuickSort extends Sort{
     public void run() {
        
         OrganizeArray();
-        
+        System.out.print("QuickSort !!");
         
         
     }

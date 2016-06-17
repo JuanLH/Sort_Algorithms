@@ -19,8 +19,8 @@ public class HeapSort extends Sort {
 
     int N;
     
-    public HeapSort(int[] array, Enumerators.Order orden) {
-        super(array, orden);
+    public HeapSort(int[] array) {
+        super(array);
     }
     
     private void sort(){
@@ -67,6 +67,7 @@ public class HeapSort extends Sort {
     public void run() {
         
         OrganizeArray();
+        System.out.print("HeapSort !!");
         
        
         

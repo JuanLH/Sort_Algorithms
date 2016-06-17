@@ -10,7 +10,9 @@ package Utilities;
  * @author juanlht
  */
 public final class ArraysData {
-
+    
+    public static final int arrayS [] = {100,-5,-9,85,963,852,741,147,258,369,-987,-652,-321,854,9656};
+    public static final int arrayS2 [] = {100,-5,-9,85,963,852,741,147,258,369,-987,-652,-321,854,9656};
     public static final int array1 [] = {43456,54,78,45,98,98,345,43,3236,34,933,432,45,567,56,
                         23,34,789,32,1245,64,567,884,432,65,778,100,454,
                         234562,456,45445,890,89,98,300,200,786,56,

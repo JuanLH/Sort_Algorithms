@@ -19,12 +19,12 @@ import Utilities.Enumerators.Order;
 public abstract  class  Sort implements Runnable{
     
     protected  int array[];
-    protected Order order;
+    
     
    //Constructor method 
-    public Sort(int[] array,Order order) {
+    public Sort(int[] array) {
         this.array = array;//put the array here
-        this.order = order;//put a enum of type Order here
+        
     }
     
     //This method is capable of printing the array
